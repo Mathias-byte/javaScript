@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cal.js"></script>
+    
+
+
+    
+</head>
+<body>
+
+    <script type="text/javascript">
+        let opSelect;
+        const calculadora1 = new Calculadora();
+        do{
+            opSelect = Number(prompt("Diga seu Commando: \n(1) para Somar\n(2) para Subtração\n(3) para Multiplicação\n(4) para Divsão\n(5) para Encerrar Programa"))
+            switch(opSelect){
+                case 1:
+
+                    calculadora1.Somar();
+                    break;
+
+                case 2:
+
+                    calculadora1.Subtracao();
+                    break;
+
+
+                case 3:
+                    calculadora1.Multiplicar()
+                    break
+
+
+                case 4:
+                    calculadora1.divisao()
+                    break
+
+
+                case 5: 
+                    alert("Programa Encerrado")
+                    break
+
+
+                default:
+                    alert("Opção Invalida")
+                    break;
+
+            }
+            
+        }while (opSelect !== 5);
+
+        
+
+    </script> 
+    
+    
+    
+</body>
+</html>
